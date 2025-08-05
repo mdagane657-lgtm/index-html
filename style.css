@@ -1,47 +1,52 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    line height: 1.6;
-
-}
-header{
-    background: #333;
-    color: white;
-    padding: 15px;
-}
-header nav{
-    display flex: ;
-    justify-content: space-between;
-    align-items: center;
-
-}
-nav ul{
-    list-style: none;
+    margin: 0;
+    justify-content: center;
     display: flex;
+    align-items:center
+    height: 100vh;
+    background-color:white;
 }
-nav ul li{
-    margin-left: 20px;
+#calculator{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
 }
-nav ul li a{
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: rgb(192, 165, 165);
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 25px;
+}
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: rgb(0, 255, 8);
     color: white;
-    text-decoration: none;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #fff;
+}
+button:active{
+    background-color: #fff;
+}
+.operator-btn{
+    background-color: orange;
 
 }
-.hero{
-    text-align: center;
-    padding: 50px;
-}
-.hero img{
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-}
-@media(max-width:768)
-nav ul{
-    flex direction:column
-    text-align:center
+.operator-btn:hover{
+    background-color: orange;
 }
